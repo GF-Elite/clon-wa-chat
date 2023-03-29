@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chat-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.chat-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-body {
+  padding: 10px;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message.sent {
+  align-items: flex-end;
+}
+
+.message p {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+}
+
+.message.sent p {
+  background-color: #dce5ee;
+}
+
+.message span {
+  font-size: 12px;
+  color: #888;
+}
+
+.chat-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.chat-footer button {
+  padding: 10px
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+  <div class="chat-header">
+    <div class="chat-info">
+      <img src="https://via.placeholder.com/50x50" alt="Profile Picture">
+      <h3>John Doe</h3>
+    </div>
+    <div class="chat-actions">
+      <button><i class="fa fa-phone"></i></button>
+      <button><i class="fa fa-video-camera"></i></button>
+      <button><i class="fa fa-info-circle"></i></button>
+    </div>
+  </div>
+  <div class="chat-body">
+    <div class="message received">
+      <p>Hello, how are you?</p>
+      <span class="time">2:30 PM</span>
+    </div>
+    <div class="message sent">
+      <p>I'm good, thanks for asking. How about you?</p>
+      <span class="time">2:32 PM</span>
+    </div>
+    <div class="message received">
+      <p>I'm fine too. What are you doing today?</p>
+      <span class="time">2:34 PM</span>
+    </div>
+    <div class="message sent">
+      <p>Nothing much, just hanging out at home. How about you?</p>
+      <span class="time">2:35 PM</span>
+    </div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" placeholder="Type a message...">
+    <button><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+</body>
+</html>
